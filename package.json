@@ -1,0 +1,27 @@
+{
+  "name": "wigs_project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnnLP2/wigs_project.git"
+  },
+  "keywords": [
+    "wigs"
+  ],
+  "author": "AnnLP2",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnnLP2/wigs_project/issues"
+  },
+  "homepage": "https://github.com/AnnLP2/wigs_project#readme",
+  "description": "",
+  "devDependencies": {
+    "eslint": "^8.41.0",
+    "eslint-plugin-react": "^7.32.2",
+    "prettier": "^2.8.8"
+  }
+}
