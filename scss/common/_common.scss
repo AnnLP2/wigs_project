@@ -4,17 +4,20 @@
 }
 
 .body {
-  font-family: "Sofia Pro", "Arial", sans-serif;
+  font-family: $default-font, "Arial";
   font-weight: 500;
   font-style: normal;
   min-width: 375px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(42px);
 }
 
 .container {
-  max-width: 1336px;
+  max-width: $content-width;
   min-width: 345px;
   margin: 0 auto;
   padding: 0 15px;
+  display: flex;
 }
 
 a {
