@@ -69,9 +69,15 @@ a {
   display: inline-flex;
   padding-left: 42px;
 }
+.header-box__basket:hover path {
+  fill: #F4DE4D;
+}
 .header-box__account {
   display: inline-flex;
   padding-left: 25px;
+}
+.header-box__account:hover path {
+  fill: #F4DE4D;
 }
 
 .logo {
@@ -240,7 +246,7 @@ a {
   fill: #F6F6F6;
 }
 .help-box__btn:hover circle {
-  fill: black;
+  fill: #F4DE4D;
 }
 .help-box__link {
   font-family: "Sofia Pro", sans-serif;
