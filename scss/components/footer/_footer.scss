@@ -1,0 +1,43 @@
+.footer {
+  margin-top: 316px;
+  margin-bottom: 60px;
+}
+
+.help-box {
+  width: 20%;
+  display: flex;
+  align-items: center;
+
+  &__btn {
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    display: inline-flex;
+    cursor: pointer;
+    &:hover path {
+      fill: #F6F6F6;
+    }
+    &:hover circle {
+      fill: black;
+    }
+
+
+
+  }
+
+  &__link {
+    font-family: $default-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.7099px;
+    line-height: 24px;
+    color: $font-color;
+    margin-left: 17px;
+  }
+}
+

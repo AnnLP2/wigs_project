@@ -97,6 +97,7 @@ a {
   background-size: cover;
   border: transparent;
   display: inline-block;
+  cursor: pointer;
 }
 
 .searchbar {
@@ -154,6 +155,101 @@ a {
 
 .sidebar {
   width: 20%;
+  margin-top: 57px;
+}
+.sidebar-title {
+  font-family: "Sofia Pro", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 47px;
+  margin-bottom: 45px;
+}
+.sidebar__list {
+  list-style: none;
+  padding-inline-start: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.sidebar__item {
+  font-family: "Sofia Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.7099px;
+  line-height: 24px;
+}
+.sidebar__link {
+  color: #000000;
+  display: inline-flex;
+  align-items: center;
+}
+.sidebar__link::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 23px;
+  height: 23px;
+  margin-right: 10px;
+}
+.sidebar__link.icon1::before {
+  background-image: url("../img/lightning.svg");
+}
+.sidebar__link.icon2::before {
+  background-image: url("../img/clothes.svg");
+}
+.sidebar__link.icon3::before {
+  background-image: url("../img/shoes.svg");
+}
+.sidebar__link.icon4::before {
+  background-image: url("../img/bag.svg");
+}
+.sidebar__link.icon5::before {
+  background-image: url("../img/active.svg");
+}
+.sidebar__link.icon6::before {
+  background-image: url("../img/gift.svg");
+}
+.sidebar__link.icon7::before {
+  background-image: url("../img/diamond.svg");
+}
+
+.footer {
+  margin-top: 316px;
+  margin-bottom: 60px;
+}
+
+.help-box {
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+.help-box__btn {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+  background-size: cover;
+  border: none;
+  display: inline-flex;
+  cursor: pointer;
+}
+.help-box__btn:hover path {
+  fill: #F6F6F6;
+}
+.help-box__btn:hover circle {
+  fill: black;
+}
+.help-box__link {
+  font-family: "Sofia Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.7099px;
+  line-height: 24px;
+  color: #000000;
+  margin-left: 17px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,77 @@
 .sidebar {
-width: 20%;
+  width: 20%;
+  margin-top: 57px;
+
+  &-title {
+    font-family: $default-font;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 47px;
+    margin-bottom: 45px;
+
+  }
+
+  &__list {
+    list-style: none;
+    padding-inline-start: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+  }
+
+  &__item {
+    font-family: $default-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.7099px;
+    line-height: 24px;
+
+  }
+
+  &__link {
+    color: $font-color;
+    display: inline-flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 23px;
+      height: 23px;
+      margin-right: 10px;
+    }
+
+    &.icon1::before {
+      background-image: url("../img/lightning.svg");
+    }
+
+    &.icon2::before {
+      background-image: url("../img/clothes.svg");
+    }
+
+    &.icon3::before {
+      background-image: url("../img/shoes.svg");
+    }
+
+    &.icon4::before {
+      background-image: url("../img/bag.svg");
+    }
+
+    &.icon5::before {
+      background-image: url("../img/active.svg");
+    }
+
+    &.icon6::before {
+      background-image: url("../img/gift.svg");
+    }
+
+    &.icon7::before {
+      background-image: url("../img/diamond.svg");
+    }
+
+
+  }
 }
