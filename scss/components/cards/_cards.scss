@@ -1,0 +1,16 @@
+.cards {
+  display: flex;
+  gap: 20px;
+
+  &__item {
+    width: 259px;
+    height: 380px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &-pic {
+      border-radius: 15px;
+
+    }
+  }
+}

@@ -1,10 +1,9 @@
 .footer {
-  margin-top: 316px;
   margin-bottom: 60px;
 }
 
 .help-box {
-  width: 20%;
+  width: 16%;
   display: flex;
   align-items: center;
 
@@ -19,15 +18,14 @@
     border: none;
     display: inline-flex;
     cursor: pointer;
+
     &:hover path {
       fill: #F6F6F6;
     }
+
     &:hover circle {
       fill: $icon-color;
     }
-
-
-
   }
 
   &__link {
