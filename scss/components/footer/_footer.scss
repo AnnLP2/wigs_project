@@ -3,9 +3,10 @@
 }
 
 .help-box {
-  width: 16%;
   display: flex;
   align-items: center;
+  position: absolute;
+  bottom: 10px;
 
   &__btn {
     width: 48px;

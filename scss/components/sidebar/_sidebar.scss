@@ -1,6 +1,8 @@
 .sidebar {
   width: 16%;
   margin-top: 57px;
+  position: relative;
+
 
   &-title {
     font-family: $default-font;
@@ -71,7 +73,5 @@
     &.icon7::before {
       background-image: url("../img/diamond.svg");
     }
-
-
   }
 }

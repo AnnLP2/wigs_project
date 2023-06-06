@@ -1,6 +1,6 @@
 .header {
   &-box {
-    width: 84%;
+    flex-grow: 1;
     margin-top: 49px;
     display: flex;
     justify-content: space-between;
@@ -108,6 +108,5 @@
 
   &__link {
     color: $font-color;
-
   }
 }
