@@ -9,6 +9,7 @@
     &__basket {
       display: inline-flex;
       padding-left: 42px;
+
       &:hover path {
         fill: $icon-color;
       }
@@ -17,6 +18,7 @@
     &__account {
       display: inline-flex;
       padding-left: 25px;
+
       &:hover path {
         fill: $icon-color;
       }
@@ -70,6 +72,10 @@
 }
 
 .menu {
+  &__overlay, &__burger {
+    display: none;
+  }
+
   &__list {
     list-style: none;
     padding-inline-start: 0;

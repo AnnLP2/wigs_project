@@ -40,3 +40,27 @@
   }
 }
 
+@include laptop {
+  .help-box {
+    bottom: 15px;
+    &__link {
+      margin-left: 8px;
+    }
+  }
+}
+
+@include tablet {
+  .help-box {
+    position: static;
+    &__link {
+      margin-left: 8px;
+    }
+  }
+}
+
+@include mobile {
+  .help-box {
+    position: static;
+  }
+}
+

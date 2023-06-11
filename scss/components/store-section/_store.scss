@@ -19,19 +19,14 @@
   }
 
   &__item {
-    width: 539px;
-    height: 180px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 15px;
     position: relative;
 
     &-pic {
       border-radius: 15px;
-    }
 
-    &.item1 {
-      background-color: #BCE7F0;
+      &.pic-1 {
+        background-color: #BCE7F0;
+      }
     }
   }
 

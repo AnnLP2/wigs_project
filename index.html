@@ -44,6 +44,8 @@
             </div>
             <div class="menu-wrap">
                 <nav class="menu">
+                    <div class="menu__overlay"></div>
+                    <button class="menu__burger" type="button"><span class="menu__burger-line"></span></button>
                     <ul class="menu__list">
                         <li class="menu__item"><a class="menu__link" href="#">products</a></li>
                         <li class="menu__item"><a class="menu__link" href="#">story</a></li>
@@ -51,32 +53,34 @@
                         <li class="menu__item"><a class="menu__link" href="#">packaging</a></li>
                     </ul>
                 </nav>
-                <a class="header-box__basket" href="#">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M5.69865 7L10.0973 2.78467C11.161 1.7653 12.839 1.7653 13.9027 2.78467L18.3013 7H20.847C21.4555 7 21.923 7.53899 21.8369 8.14142L20.368 18.4243C20.1568 19.9022 18.8911 21 17.3981 21H6.6019C5.10895 21 3.84318 19.9022 3.63205 18.4243L2.16307 8.14142C2.07701 7.53899 2.54447 7 3.15302 7H5.69865ZM11.1351 3.86766C11.6186 3.4043 12.3814 3.4043 12.8649 3.86766L16.1334 7H7.86658L11.1351 3.86766ZM3.72952 8.5L5.11697 18.2121C5.22254 18.9511 5.85542 19.5 6.6019 19.5H17.3981C18.1446 19.5 18.7775 18.9511 18.883 18.2121L20.2705 8.5H3.72952Z"
-                              fill="black"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M8 11.25C8.41421 11.25 8.75 11.5858 8.75 12V16C8.75 16.4142 8.41421 16.75 8 16.75C7.58579 16.75 7.25 16.4142 7.25 16V12C7.25 11.5858 7.58579 11.25 8 11.25Z"
-                              fill="black"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M12 11.25C12.4142 11.25 12.75 11.5858 12.75 12V16C12.75 16.4142 12.4142 16.75 12 16.75C11.5858 16.75 11.25 16.4142 11.25 16V12C11.25 11.5858 11.5858 11.25 12 11.25Z"
-                              fill="black"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M16 11.25C16.4142 11.25 16.75 11.5858 16.75 12V16C16.75 16.4142 16.4142 16.75 16 16.75C15.5858 16.75 15.25 16.4142 15.25 16V12C15.25 11.5858 15.5858 11.25 16 11.25Z"
-                              fill="black"/>
-                    </svg>
-                </a>
-                <a class="header-box__account" href="#">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M12 10.5C13.933 10.5 15.5 8.933 15.5 7C15.5 5.067 13.933 3.5 12 3.5C10.067 3.5 8.5 5.067 8.5 7C8.5 8.933 10.067 10.5 12 10.5ZM12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z"
-                              fill="black"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M9 15.75C6.65279 15.75 4.75 17.6528 4.75 20V21C4.75 21.4142 4.41421 21.75 4 21.75C3.58579 21.75 3.25 21.4142 3.25 21V20C3.25 16.8244 5.82436 14.25 9 14.25H15C18.1756 14.25 20.75 16.8244 20.75 20V21C20.75 21.4142 20.4142 21.75 20 21.75C19.5858 21.75 19.25 21.4142 19.25 21V20C19.25 17.6528 17.3472 15.75 15 15.75H9Z"
-                              fill="black"/>
-                    </svg>
-                </a>
+                <div>
+                    <a class="header-box__basket" href="#">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M5.69865 7L10.0973 2.78467C11.161 1.7653 12.839 1.7653 13.9027 2.78467L18.3013 7H20.847C21.4555 7 21.923 7.53899 21.8369 8.14142L20.368 18.4243C20.1568 19.9022 18.8911 21 17.3981 21H6.6019C5.10895 21 3.84318 19.9022 3.63205 18.4243L2.16307 8.14142C2.07701 7.53899 2.54447 7 3.15302 7H5.69865ZM11.1351 3.86766C11.6186 3.4043 12.3814 3.4043 12.8649 3.86766L16.1334 7H7.86658L11.1351 3.86766ZM3.72952 8.5L5.11697 18.2121C5.22254 18.9511 5.85542 19.5 6.6019 19.5H17.3981C18.1446 19.5 18.7775 18.9511 18.883 18.2121L20.2705 8.5H3.72952Z"
+                                  fill="black"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M8 11.25C8.41421 11.25 8.75 11.5858 8.75 12V16C8.75 16.4142 8.41421 16.75 8 16.75C7.58579 16.75 7.25 16.4142 7.25 16V12C7.25 11.5858 7.58579 11.25 8 11.25Z"
+                                  fill="black"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M12 11.25C12.4142 11.25 12.75 11.5858 12.75 12V16C12.75 16.4142 12.4142 16.75 12 16.75C11.5858 16.75 11.25 16.4142 11.25 16V12C11.25 11.5858 11.5858 11.25 12 11.25Z"
+                                  fill="black"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M16 11.25C16.4142 11.25 16.75 11.5858 16.75 12V16C16.75 16.4142 16.4142 16.75 16 16.75C15.5858 16.75 15.25 16.4142 15.25 16V12C15.25 11.5858 15.5858 11.25 16 11.25Z"
+                                  fill="black"/>
+                        </svg>
+                    </a>
+                    <a class="header-box__account" href="#">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M12 10.5C13.933 10.5 15.5 8.933 15.5 7C15.5 5.067 13.933 3.5 12 3.5C10.067 3.5 8.5 5.067 8.5 7C8.5 8.933 10.067 10.5 12 10.5ZM12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z"
+                                  fill="black"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M9 15.75C6.65279 15.75 4.75 17.6528 4.75 20V21C4.75 21.4142 4.41421 21.75 4 21.75C3.58579 21.75 3.25 21.4142 3.25 21V20C3.25 16.8244 5.82436 14.25 9 14.25H15C18.1756 14.25 20.75 16.8244 20.75 20V21C20.75 21.4142 20.4142 21.75 20 21.75C19.5858 21.75 19.25 21.4142 19.25 21V20C19.25 17.6528 17.3472 15.75 15 15.75H9Z"
+                                  fill="black"/>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -99,41 +103,46 @@
             <div class="store-wrap">
                 <div class="store-box">
                     <div class="store__item item1">
-                        <img class="store__item-pic" src="./img/sale.svg" alt="Sale banner">
+                        <img class="store__item-pic img-responsive pic-1" src="./img/sale.png" alt="Sale banner">
                         <h2 class="store__item-title sale-title">Get up to 50% off</h2>
                     </div>
                     <div class="store__item item2">
-                        <img class="store__item-pic" src="./img/summer-sale.svg" alt="Summer sale banner">
+                        <img class="store__item-pic img-responsive" src="./img/summer-sale.svg"
+                             alt="Summer sale banner">
                     </div>
                 </div>
                 <div class="cards">
                     <div class="cards__item">
-                        <img class="cards__item-pic" src="img/pink-girl.jpg" alt="Pink girl">
+                        <div class="like-icon"></div>
+                        <img class="cards__item-pic img-responsive" src="img/pink-girl.jpg" alt="Pink girl">
                     </div>
                     <div class="cards__item">
-                        <img class="cards__item-pic" src="./img/curly-girl.jpg" alt="Curly girl">
+                        <div class="like-icon"></div>
+                        <img class="cards__item-pic img-responsive" src="./img/curly-girl.jpg" alt="Curly girl">
                     </div>
                 </div>
             </div>
             <div class="store-wrap">
                 <div class="store-box">
                     <div class="store__item item3">
-                        <img class="store__item-pic" src="./img/blue-girl.jpg" alt="Blue girl">
+                        <img class="store__item-pic img-responsive" src="./img/blue-girl.jpg" alt="Blue girl">
                         <h2 class="store__item-title trend-title title1">Trending & Hot</h2>
                         <p class="store__item-text">A collection of most trending items.</p>
                     </div>
                     <div class="store__item item4">
-                        <img class="store__item-pic" src="./img/red-girl.jpg" alt="Red girl">
+                        <img class="store__item-pic img-responsive" src="./img/red-girl.jpg" alt="Red girl">
                         <h2 class="store__item-title trend-title title2">Buy it for the first time</h2>
                         <p class="store__item-text">New in store. Try it before anyone else.</p>
                     </div>
                 </div>
                 <div class="cards">
                     <div class="cards__item">
-                        <img class="cards__item-pic" src="./img/party-girl.jpg" alt="Party girl">
+                        <div class="like-icon"></div>
+                        <img class="cards__item-pic img-responsive" src="./img/party-girl.jpg" alt="Party girl">
                     </div>
                     <div class="cards__item">
-                        <img class="cards__item-pic" src="./img/white-girl.jpg" alt="White girl">
+                        <div class="like-icon"></div>
+                        <img class="cards__item-pic img-responsive" src="./img/white-girl.jpg" alt="White girl">
                     </div>
                 </div>
             </div>

@@ -1,0 +1,18 @@
+@include laptop {
+  .sidebar {
+    width: 22%;
+    margin-top: 0;
+  }
+}
+
+@include tablet {
+  .sidebar {
+    display: none;
+  }
+}
+
+@include mobile {
+  .sidebar {
+    display: none;
+  }
+}

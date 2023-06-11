@@ -1,11 +1,5 @@
-@mixin desktop() {
-  @media (max-width: $breakpoint-xxl) {
-    @content;
-  }
-}
-
 @mixin laptop() {
-  @media (max-width: $breakpoint-xl) {
+  @media (max-width: $breakpoint-l) {
     @content;
   }
 }

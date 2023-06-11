@@ -7,14 +7,14 @@
   font-family: $default-font, "Arial";
   font-weight: 500;
   font-style: normal;
-  min-width: 375px;
+  min-width: 395px;
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(42px);
 }
 
 .container {
   max-width: $content-width;
-  min-width: 345px;
+  min-width: 395px;
   margin: 0 auto;
   padding: 0 15px;
   display: flex;
@@ -38,4 +38,15 @@ a {
 .img-responsive {
   max-width: 100%;
   height: auto;
+}
+
+.stop-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
+@include mobile {
+  .container {
+    display: block;
+  }
 }
