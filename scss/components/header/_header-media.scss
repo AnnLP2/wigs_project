@@ -99,7 +99,7 @@
     }
 
     &__item {
-      padding: 7px 0px;
+      padding: 7px 0;
       background-color: #F6F6F6;
       border-radius: 12px;
       margin: 0 15px;
@@ -107,7 +107,7 @@
       text-align: center;
 
       &::after {
-        left: 96px;
+        left: 99px;
         top: 34px;
         width: 49%;
       }
@@ -132,14 +132,14 @@
       border-radius: 8px;
 
       &:active {
-        background-color: #F4DE4D;
+        background-color: $icon-color;
       }
     }
 
     &__burger-line {
       width: 18px;
       height: 2px;
-      background-color: black;
+      background-color: $font-color;
       transition: all 0.3s ease-in-out;
       display: inline-flex;
     }
@@ -150,7 +150,7 @@
       position: absolute;
       width: 18px;
       height: 2px;
-      background-color: black;
+      background-color: $font-color;
       transition: all 0.3s ease-in-out;
     }
 
